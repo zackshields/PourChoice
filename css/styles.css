@@ -609,6 +609,146 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   How It Works Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.section--how-it-works {
+    background: var(--color-bg-primary);
+    overflow: hidden;
+}
+
+.how-it-works__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .how-it-works__content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-4xl);
+    }
+}
+
+.how-it-works__image {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.how-it-works__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.how-it-works__image:hover img {
+    transform: scale(1.03);
+}
+
+.how-it-works__image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(212, 166, 52, 0.1) 0%,
+        transparent 50%
+    );
+    pointer-events: none;
+}
+
+.how-it-works__text {
+    text-align: left;
+}
+
+.how-it-works__text .section__label {
+    display: block;
+    text-align: left;
+}
+
+.how-it-works__text .section__title {
+    text-align: left;
+    margin-bottom: var(--space-lg);
+}
+
+.how-it-works__description {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.how-it-works__description strong {
+    color: var(--color-accent-primary);
+}
+
+.how-it-works__steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.how-it-works__step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+}
+
+.how-it-works__step:hover {
+    border-color: var(--color-accent-primary);
+    transform: translateX(4px);
+}
+
+.how-it-works__step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: var(--color-accent-primary);
+    color: var(--color-bg-primary);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    border-radius: var(--radius-full);
+}
+
+.how-it-works__step strong {
+    display: block;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+}
+
+.how-it-works__step p {
+    color: var(--color-text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.how-it-works__note {
+    padding: var(--space-lg);
+    background: rgba(212, 166, 52, 0.1);
+    border: 1px solid rgba(212, 166, 52, 0.2);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+}
+
+.how-it-works__note strong {
+    color: var(--color-accent-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    Beer Menu Section
    ───────────────────────────────────────────────────────────────────────────── */
 .section--menu {
