@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL</title>
+    <meta name="description" content="Pour Choice Taphouse - 50 Taps of craft beer, full bar, and good vibes in the heart of Mills 50, Orlando. Visit us at 1225 N Mills Ave.">
+    <meta name="keywords" content="craft beer, taphouse, Orlando, Mills 50, bar, draft beer, Pour Choice, Florida">
+    <meta name="author" content="Pour Choice Taphouse">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pourchoicetaphouse.com/">
+    <meta property="og:title" content="Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL">
+    <meta property="og:description" content="50 Taps of craft beer, full bar, and good vibes in the heart of Mills 50, Orlando.">
+    <!-- TODO: Replace with your actual OG image URL -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pourchoicetaphouse.com/">
+    <meta name="twitter:title" content="Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL">
+    <meta name="twitter:description" content="50 Taps of craft beer, full bar, and good vibes in the heart of Mills 50, Orlando.">
+    <!-- TODO: Replace with your actual Twitter image URL -->
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&h=630&fit=crop">
+    
+    <!-- Favicon -->
+    <!-- TODO: Add your favicon files -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Age Gate Modal -->
+    <div id="age-gate" class="age-gate">
+        <div class="age-gate__overlay"></div>
+        <div class="age-gate__modal">
+            <div class="age-gate__content">
+                <div class="age-gate__logo">🍺</div>
+                <h2 class="age-gate__title">Welcome to Pour Choice Taphouse</h2>
+                <p class="age-gate__text">You must be 21 years or older to enter this site.</p>
+                <p class="age-gate__question">Are you 21 or older?</p>
+                <div class="age-gate__buttons">
+                    <button id="age-yes" class="btn btn--primary">Yes, I'm 21+</button>
+                    <button id="age-no" class="btn btn--secondary">No, I'm Under 21</button>
+                </div>
+                <p class="age-gate__disclaimer">By entering this site, you agree to our Terms of Service and Privacy Policy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">Pour Choice</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#menu" class="nav__link">Beer Menu</a></li>
+                <li><a href="#instagram" class="nav__link">Gallery</a></li>
+                <li><a href="#hours" class="nav__link">Hours</a></li>
+                <li><a href="#location" class="nav__link">Location</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <!-- TODO: Replace this background image with your own hero photo -->
+        <div class="hero__background" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&q=80');"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <!-- TODO: Replace with your actual logo image -->
+            <!-- <img src="images/logo.png" alt="Pour Choice Taphouse Logo" class="hero__logo-img"> -->
+            <h1 class="hero__title">Pour Choice Taphouse</h1>
+            <p class="hero__tagline">50 Taps • Craft Beer • Full Bar • Good Vibes</p>
+            <p class="hero__location">Mills 50 District • Orlando, FL</p>
+            <div class="hero__cta">
+                <a href="#menu" class="btn btn--primary btn--large">View Beer Menu</a>
+                <a href="#location" class="btn btn--outline btn--large">Find Us</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Beer Menu Section (Untappd Integration) -->
+        <section class="section section--menu" id="menu">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">What's Pouring</span>
+                    <h2 class="section__title">Live Beer Menu</h2>
+                    <p class="section__subtitle">50 rotating taps of the finest craft beer, plus a full bar with wine, spirits, and cocktails</p>
+                </div>
+                
+                <div class="menu__embed">
+                    <!-- Untappd Menu Widget - Venue ID: 42359 -->
+                    <script type="text/javascript">
+                        (function() {
+                            var script = document.createElement('script');
+                            script.type = 'text/javascript';
+                            script.async = true;
+                            script.src = '//business.untappd.com/locations/42359/themes/164113/js';
+                            var entry = document.getElementsByTagName('script')[0];
+                            entry.parentNode.insertBefore(script, entry);
+                        })();
+                    </script>
+                    <div id="untappd-menu-42359"></div>
+                </div>
+                
+                <div class="menu__note">
+                    <p>🍷 <strong>Full Bar Available</strong> — Wine, spirits, cocktails, and non-alcoholic options</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed Section -->
+        <section class="section section--instagram" id="instagram">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">@pourchoicetaphouse</span>
+                    <h2 class="section__title">Latest from Instagram</h2>
+                    <p class="section__subtitle">Follow us for daily tap updates, events, and good times</p>
+                </div>
+                
+                <div class="instagram__feed">
+                    <!-- LightWidget Instagram Feed -->
+                    <div class="instagram__widget">
+                        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                        <iframe src="//lightwidget.com/widgets/a85802149a9a52c6b53dc76d6f215c32.html" 
+                                scrolling="no" 
+                                allowtransparency="true" 
+                                class="lightwidget-widget" 
+                                style="width:100%;border:0;overflow:hidden;">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="instagram__follow">
+                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" class="btn btn--primary">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        Follow @pourchoicetaphouse
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hours Section -->
+        <section class="section section--hours" id="hours">
+            <div class="container">
+                <div class="hours__card">
+                    <div class="hours__header">
+                        <span class="section__label">Visit Us</span>
+                        <h2 class="section__title">Hours of Operation</h2>
+                    </div>
+                    
+                    <!-- 
+                    ╔════════════════════════════════════════════════════════════════╗
+                    ║  TODO: UPDATE HOURS                                            ║
+                    ║                                                                ║
+                    ║  Update these hours to match your actual operating hours.      ║
+                    ║  The JavaScript will automatically highlight today's hours.    ║
+                    ╚════════════════════════════════════════════════════════════════╝
+                    -->
+                    
+                    <div class="hours__grid">
+                        <div class="hours__day" data-day="1">
+                            <span class="hours__day-name">Monday</span>
+                            <span class="hours__time">4:00 PM – 12:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="2">
+                            <span class="hours__day-name">Tuesday</span>
+                            <span class="hours__time">4:00 PM – 12:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="3">
+                            <span class="hours__day-name">Wednesday</span>
+                            <span class="hours__time">4:00 PM – 12:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="4">
+                            <span class="hours__day-name">Thursday</span>
+                            <span class="hours__time">4:00 PM – 12:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="5">
+                            <span class="hours__day-name">Friday</span>
+                            <span class="hours__time">2:00 PM – 2:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="6">
+                            <span class="hours__day-name">Saturday</span>
+                            <span class="hours__time">12:00 PM – 2:00 AM</span>
+                        </div>
+                        <div class="hours__day" data-day="0">
+                            <span class="hours__day-name">Sunday</span>
+                            <span class="hours__time">12:00 PM – 12:00 AM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hours__note">
+                        <p>🎉 <strong>Happy Hour:</strong> Mon–Fri, 4–7 PM</p>
+                        <p class="hours__note-sub">Hours may vary on holidays. Check our Instagram for updates!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="section section--location" id="location">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Find Us</span>
+                    <h2 class="section__title">Location</h2>
+                    <p class="section__subtitle">Located in the heart of the Mills 50 District</p>
+                </div>
+                
+                <div class="location__content">
+                    <div class="location__info">
+                        <div class="location__address">
+                            <h3>Pour Choice Taphouse</h3>
+                            <p>1225 North Mills Ave</p>
+                            <p>Orlando, FL 32803</p>
+                        </div>
+                        
+                        <div class="location__details">
+                            <div class="location__detail">
+                                <span class="location__icon">🚗</span>
+                                <span>Free street parking available</span>
+                            </div>
+                            <div class="location__detail">
+                                <span class="location__icon">🚌</span>
+                                <span>LYNX bus routes nearby</span>
+                            </div>
+                            <div class="location__detail">
+                                <span class="location__icon">🍺</span>
+                                <span>50 rotating craft taps + full bar</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=1225+North+Mills+Ave+Orlando+FL+32803" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="btn btn--primary">
+                            Get Directions
+                        </a>
+                    </div>
+                    
+                    <div class="location__map">
+                        <!-- Google Maps Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8744858426584!2d-81.36658492392068!3d28.562454875697407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ae4e3e3e3e3%3A0x0!2s1225%20N%20Mills%20Ave%2C%20Orlando%2C%20FL%2032803!5e0!3m2!1sen!2sus!4v1701619200000!5m2!1sen!2sus"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Pour Choice Taphouse Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <div class="contact__bar">
+                    <div class="contact__item">
+                        <span class="contact__icon">📍</span>
+                        <div class="contact__text">
+                            <span class="contact__label">Address</span>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=1225+North+Mills+Ave+Orlando+FL+32803" target="_blank" rel="noopener">
+                                1225 N Mills Ave, Orlando, FL 32803
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <span class="contact__icon">📧</span>
+                        <div class="contact__text">
+                            <span class="contact__label">Email</span>
+                            <!-- TODO: Update with your actual email -->
+                            <a href="mailto:hello@pourchoicetaphouse.com">hello@pourchoicetaphouse.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <span class="contact__icon">📱</span>
+                        <div class="contact__text">
+                            <span class="contact__label">Phone</span>
+                            <!-- TODO: Update with your actual phone number -->
+                            <a href="tel:+14075551234">(407) 555-1234</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <span class="contact__icon">📸</span>
+                        <div class="contact__text">
+                            <span class="contact__label">Instagram</span>
+                            <!-- TODO: Update with your actual Instagram handle -->
+                            <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener">@pourchoicetaphouse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">Pour Choice Taphouse</h3>
+                    <p class="footer__tagline">50 Taps • Craft Beer • Full Bar • Good Vibes</p>
+                </div>
+                
+                <div class="footer__social">
+                    <!-- TODO: Add your social media links -->
+                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://untappd.com/v/pour-choice-taphouse" target="_blank" rel="noopener" aria-label="Untappd" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M11.684 9.271l-3.746-6.489a1.91 1.91 0 0 0-2.608-.699l-.001.001a1.91 1.91 0 0 0-.699 2.608l3.746 6.489a.89.89 0 0 1-.326 1.218.89.89 0 0 1-1.217-.325l-3.746-6.489A3.691 3.691 0 0 1 4.424.547l.001-.001a3.691 3.691 0 0 1 5.039 1.35l3.746 6.489a.89.89 0 0 1-1.526.886zM21.258 6.541a3.691 3.691 0 0 0-5.039-1.35l-3.746 6.489a.89.89 0 0 0 1.526.886l3.746-6.489a1.91 1.91 0 0 1 2.608-.699 1.91 1.91 0 0 1 .699 2.608l-3.746 6.489a.89.89 0 0 0 .326 1.218.89.89 0 0 0 1.217-.325l3.746-6.489a3.691 3.691 0 0 0-1.337-5.038zm-6.441 8.019a3.04 3.04 0 0 1-3.04 3.04 3.04 3.04 0 0 1-3.04-3.04 3.04 3.04 0 0 1 3.04-3.04 3.04 3.04 0 0 1 3.04 3.04z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__legal">
+                    Drink Responsibly • Must be 21+ to enter • 
+                    Pour Choice Taphouse © <span id="current-year">2025</span>
+                </p>
+                <p class="footer__disclaimer">
+                    Please enjoy our craft beer and full bar offerings responsibly. Don't drink and drive.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
