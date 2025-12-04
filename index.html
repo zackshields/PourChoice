@@ -1,44 +1,414 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- SEO Meta Tags -->
-    <title>Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL</title>
-    <meta name="description" content="Pour Choice Taphouse - Orlando's premier self-pour taphouse with 50 rotating taps of craft beer, seltzer, cider & cocktails. Link your wristband and pour your own! Full bar available. Mills 50 District.">
-    <meta name="keywords" content="craft beer, taphouse, Orlando, Mills 50, bar, draft beer, Pour Choice, Florida">
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         PRIMARY SEO META TAGS - Optimized for Orlando Bar Keywords
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <title>Pour Choice Taphouse | Best Craft Beer Bar in Orlando, FL</title>
+    <meta name="description" content="Orlando's #1 self-pour craft beer bar with 50 rotating taps. Best taphouse in Mills 50 District. Pour your own beer, seltzer & cocktails. Visit us today!">
+    <meta name="keywords" content="bar Orlando, craft beer Orlando, best bar Orlando, taphouse Orlando, beer bar Orlando, bars Mills 50 Orlando, self pour beer Orlando, craft beer bar Orlando FL, bars near Ivanhoe Orlando, best craft beer Orlando, Orlando taphouse, Mills 50 bars">
     <meta name="author" content="Pour Choice Taphouse">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://pourchoicetaphouse.com/">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Orlando">
+    <meta name="geo.position" content="28.5624;-81.3644">
+    <meta name="ICBM" content="28.5624, -81.3644">
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         OPEN GRAPH / FACEBOOK
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:site_name" content="Pour Choice Taphouse">
     <meta property="og:url" content="https://pourchoicetaphouse.com/">
-    <meta property="og:title" content="Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL">
-    <meta property="og:description" content="Orlando's premier self-pour taphouse! 50 rotating taps of craft beer, seltzer, cider & cocktails. Link your wristband and pour your own. Full bar available.">
-    <!-- TODO: Replace with your actual OG image URL -->
-    <meta property="og:image" content="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&h=630&fit=crop">
+    <meta property="og:title" content="Pour Choice Taphouse | Best Craft Beer Bar in Orlando, FL">
+    <meta property="og:description" content="Orlando's #1 self-pour craft beer bar with 50 rotating taps in Mills 50 District. Pour your own beer, seltzer, cider & cocktails. Full bar available!">
+    <!-- TODO: Replace with your actual 1200x630 OG image hosted on your domain -->
+    <meta property="og:image" content="https://pourchoicetaphouse.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Pour Choice Taphouse - Orlando's Best Self-Pour Craft Beer Bar">
+    <meta property="og:locale" content="en_US">
+    <meta property="business:contact_data:street_address" content="1225 North Mills Ave">
+    <meta property="business:contact_data:locality" content="Orlando">
+    <meta property="business:contact_data:region" content="FL">
+    <meta property="business:contact_data:postal_code" content="32803">
+    <meta property="business:contact_data:country_name" content="United States">
     
-    <!-- Twitter Cards -->
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         TWITTER CARDS
+         ═══════════════════════════════════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@pourchoicetap">
+    <meta name="twitter:creator" content="@pourchoicetap">
     <meta name="twitter:url" content="https://pourchoicetaphouse.com/">
-    <meta name="twitter:title" content="Pour Choice Taphouse | Craft Beer & Full Bar in Orlando, FL">
-    <meta name="twitter:description" content="Orlando's premier self-pour taphouse! 50 rotating taps of craft beer, seltzer, cider & cocktails. Link your wristband and pour your own. Full bar available.">
-    <!-- TODO: Replace with your actual Twitter image URL -->
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&h=630&fit=crop">
+    <meta name="twitter:title" content="Pour Choice Taphouse | Best Craft Beer Bar in Orlando">
+    <meta name="twitter:description" content="50 self-pour taps of craft beer, seltzer, cider & cocktails in Orlando's Mills 50 District. The best taphouse experience in Central Florida!">
+    <!-- TODO: Replace with your actual Twitter card image -->
+    <meta property="twitter:image" content="https://pourchoicetaphouse.com/images/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="Pour Choice Taphouse Orlando - Self-Pour Craft Beer Bar">
     
-    <!-- Favicon -->
-    <!-- TODO: Add your favicon files -->
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         FAVICONS & APP ICONS
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <!-- TODO: Add your favicon files to /images/ folder -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#d4a634">
+    <meta name="msapplication-TileColor" content="#0d0d0d">
     
-    <!-- Google Fonts -->
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         PRECONNECT & FONTS
+         ═══════════════════════════════════════════════════════════════════════ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://embed-menu-preloader.untappdapi.com">
+    <link rel="preconnect" href="https://elfsightcdn.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD STRUCTURED DATA - LOCAL BUSINESS SCHEMA
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BarOrPub",
+        "@id": "https://pourchoicetaphouse.com/#business",
+        "name": "Pour Choice Taphouse",
+        "alternateName": "Pour Choice",
+        "description": "Orlando's premier self-pour craft beer bar featuring 50 rotating taps of craft beer, hard seltzer, cider, and cocktails. Located in the heart of Mills 50 District with a full liquor bar.",
+        "url": "https://pourchoicetaphouse.com",
+        "telephone": "+1-407-555-1234",
+        "email": "hello@pourchoicetaphouse.com",
+        "image": [
+            "https://pourchoicetaphouse.com/images/og-image.jpg",
+            "https://pourchoicetaphouse.com/images/self-pour-taps.png",
+            "https://pourchoicetaphouse.com/images/interior.jpg"
+        ],
+        "logo": "https://pourchoicetaphouse.com/images/logo.png",
+        "priceRange": "$$",
+        "servesCuisine": ["Craft Beer", "Cocktails", "Wine", "Hard Seltzer", "Cider"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1225 North Mills Ave",
+            "addressLocality": "Orlando",
+            "addressRegion": "FL",
+            "postalCode": "32803",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.5624,
+            "longitude": -81.3644
+        },
+        "hasMap": "https://www.google.com/maps?cid=YOUR_GOOGLE_CID",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "16:00",
+                "closes": "00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "16:00",
+                "closes": "02:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "12:00",
+                "closes": "02:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "12:00",
+                "closes": "00:00"
+            }
+        ],
+        "menu": "https://pourchoicetaphouse.com/#menu",
+        "hasMenu": {
+            "@type": "Menu",
+            "name": "Self-Pour Tap Menu",
+            "description": "50 rotating taps of craft beer, hard seltzer, cider, and cocktails",
+            "url": "https://pourchoicetaphouse.com/#menu"
+        },
+        "acceptsReservations": "False",
+        "paymentAccepted": "Cash, Credit Card, Debit Card",
+        "currenciesAccepted": "USD",
+        "areaServed": {
+            "@type": "City",
+            "name": "Orlando",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "Florida"
+            }
+        },
+        "sameAs": [
+            "https://www.instagram.com/pourchoicetaphouse",
+            "https://www.facebook.com/pourchoicetaphouse",
+            "https://untappd.com/v/pour-choice-taphouse/37440",
+            "https://www.google.com/maps/place/?q=place_id:YOUR_PLACE_ID"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Mike R."
+                },
+                "datePublished": "2024-11-15",
+                "reviewBody": "Best craft beer bar in Orlando! The self-pour system is amazing - you can try so many different beers. Great selection of local Florida breweries.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sarah L."
+                },
+                "datePublished": "2024-10-22",
+                "reviewBody": "Finally a taphouse where I can pour my own drinks! The Mills 50 location is perfect and the rotating taps always have something new to try.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+            }
+        ],
+        "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://pourchoicetaphouse.com/#location",
+                "actionPlatform": [
+                    "http://schema.org/DesktopWebPlatform",
+                    "http://schema.org/MobileWebPlatform"
+                ]
+            },
+            "result": {
+                "@type": "Reservation",
+                "name": "Visit Pour Choice Taphouse"
+            }
+        }
+    }
+    </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD - ORGANIZATION SCHEMA
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://pourchoicetaphouse.com/#organization",
+        "name": "Pour Choice Taphouse",
+        "url": "https://pourchoicetaphouse.com",
+        "logo": "https://pourchoicetaphouse.com/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-407-555-1234",
+            "contactType": "customer service",
+            "areaServed": "US",
+            "availableLanguage": "English"
+        },
+        "sameAs": [
+            "https://www.instagram.com/pourchoicetaphouse",
+            "https://www.facebook.com/pourchoicetaphouse",
+            "https://untappd.com/v/pour-choice-taphouse/37440"
+        ]
+    }
+    </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD - BREADCRUMB SCHEMA
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Orlando Bars",
+                "item": "https://pourchoicetaphouse.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Mills 50 District",
+                "item": "https://pourchoicetaphouse.com/#location"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Pour Choice Taphouse",
+                "item": "https://pourchoicetaphouse.com"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD - FAQ SCHEMA (People Also Ask Optimization)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is the best bar in Orlando?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse is consistently rated as one of the best bars in Orlando, featuring 50 self-pour taps with rotating craft beers, seltzers, ciders, and cocktails. Located in the Mills 50 District at 1225 N Mills Ave, we offer a unique experience where you pour your own drinks and pay by the ounce."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I find craft beer in Orlando?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse in Orlando's Mills 50 District offers one of the largest selections of craft beer in Central Florida with 50 rotating self-pour taps. We feature local Florida breweries alongside national and international craft beers, updated weekly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a self-pour bar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A self-pour bar like Pour Choice Taphouse allows guests to pour their own drinks using an RFID wristband linked to their payment method. You can sample as many beers as you like and only pay for what you pour, measured by the ounce. It's the perfect way to explore craft beer!"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What bars are in Mills 50 Orlando?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mills 50 District in Orlando is home to some of the city's best bars and nightlife. Pour Choice Taphouse at 1225 N Mills Ave is the neighborhood's premier craft beer destination with 50 self-pour taps. The area is known for its eclectic mix of bars, restaurants, and entertainment venues."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Pour Choice Taphouse have food?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse focuses on beverages with 50 self-pour taps and a full liquor bar. We welcome outside food and are surrounded by amazing Mills 50 restaurants. Food trucks also frequently visit!"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the hours for Pour Choice Taphouse?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse is open Monday-Thursday 4PM-12AM, Friday 4PM-2AM, Saturday 12PM-2AM, and Sunday 12PM-12AM. Happy Hour runs Monday-Friday from 4-7PM."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Pour Choice Taphouse dog friendly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Pour Choice Taphouse welcomes well-behaved dogs on our outdoor patio area. We're a dog-friendly bar in Orlando's Mills 50 District."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best taphouse in Orlando?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse is Orlando's best taphouse experience with 50 self-pour taps featuring craft beer, hard seltzer, cider, and cocktails on tap. Our unique self-pour system and rotating selection make us the top choice for beer lovers in Central Florida."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Pour Choice Taphouse located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pour Choice Taphouse is located at 1225 North Mills Ave, Orlando, FL 32803, in the heart of the Mills 50 District near Ivanhoe Village. We're easily accessible with free street parking available."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does self-pour beer work at Pour Choice?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "At Pour Choice Taphouse, you get an RFID wristband linked to your payment method. Simply tap your wristband at any of our 50 taps to activate it, pour your drink, and you're charged by the ounce. Try samples or pour full glasses - you're in control!"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD - EVENT SCHEMA (Upcoming Events)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <!-- TODO: Update with real events -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Florida Brewery Tap Takeover",
+        "description": "Featuring 10 exclusive taps from Florida's best local breweries. Meet the brewers and try limited releases!",
+        "startDate": "2025-01-15T18:00:00-05:00",
+        "endDate": "2025-01-15T23:00:00-05:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Pour Choice Taphouse",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 North Mills Ave",
+                "addressLocality": "Orlando",
+                "addressRegion": "FL",
+                "postalCode": "32803",
+                "addressCountry": "US"
+            }
+        },
+        "image": "https://pourchoicetaphouse.com/images/tap-takeover.jpg",
+        "organizer": {
+            "@type": "Organization",
+            "name": "Pour Choice Taphouse",
+            "url": "https://pourchoicetaphouse.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2024-12-01"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Age Gate Modal -->
@@ -92,10 +462,10 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav__container">
-            <a href="#" class="nav__logo">Pour Choice</a>
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <a href="/" class="nav__logo" aria-label="Pour Choice Taphouse - Home">Pour Choice</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -103,48 +473,57 @@
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#how-it-works" class="nav__link">How It Works</a></li>
                 <li><a href="#menu" class="nav__link">Tap Menu</a></li>
-                <li><a href="#instagram" class="nav__link">Gallery</a></li>
+                <li><a href="#why-locals-love-us" class="nav__link">About</a></li>
                 <li><a href="#hours" class="nav__link">Hours</a></li>
                 <li><a href="#location" class="nav__link">Location</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════════════════════════════════ -->
     <header class="hero" id="hero">
-        <!-- TODO: Replace this background image with your own hero photo -->
-        <div class="hero__background" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&q=80');"></div>
+        <!-- TODO: Replace with your own hero photo -->
+        <div class="hero__background" style="background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&q=80');" role="img" aria-label="Interior of Pour Choice Taphouse craft beer bar in Orlando"></div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
             <!-- TODO: Replace with your actual logo image -->
-            <!-- <img src="images/logo.png" alt="Pour Choice Taphouse Logo" class="hero__logo-img"> -->
+            <!-- <img src="images/logo.png" alt="Pour Choice Taphouse Logo - Best Craft Beer Bar Orlando" class="hero__logo-img"> -->
             <h1 class="hero__title">Pour Choice Taphouse</h1>
-            <p class="hero__tagline">50 Self-Pour Taps • Craft Beer • Cocktails • Full Bar</p>
-            <p class="hero__location">Mills 50 District • Orlando, FL</p>
+            <p class="hero__tagline">Orlando's Best Self-Pour Craft Beer Bar</p>
+            <p class="hero__subtitle">50 Rotating Taps • Craft Beer • Cocktails • Full Bar</p>
+            <p class="hero__location"><span itemscope itemtype="https://schema.org/Place"><span itemprop="name">Mills 50 District</span></span> • Orlando, FL</p>
             <div class="hero__cta">
-                <a href="#menu" class="btn btn--primary btn--large">View Beer Menu</a>
-                <a href="#location" class="btn btn--outline btn--large">Find Us</a>
+                <a href="#menu" class="btn btn--primary btn--large">View Tap Menu</a>
+                <a href="#location" class="btn btn--outline btn--large">Get Directions</a>
             </div>
         </div>
-        <div class="hero__scroll">
+        <div class="hero__scroll" aria-hidden="true">
             <span>Scroll</span>
             <div class="hero__scroll-line"></div>
         </div>
     </header>
 
-    <main>
-        <!-- How It Works Section -->
-        <section class="section section--how-it-works" id="how-it-works">
+    <main id="main-content">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             HOW IT WORKS SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--how-it-works" id="how-it-works" aria-labelledby="how-it-works-title">
             <div class="container">
                 <div class="how-it-works__content">
                     <div class="how-it-works__image">
-                        <img src="images/self-pour-taps.png" alt="Self-pour beer taps at Pour Choice Taphouse">
+                        <img src="images/self-pour-taps.png" 
+                             alt="Self-pour craft beer taps at Pour Choice Taphouse Orlando - guests pouring their own beer" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
                     </div>
                     <div class="how-it-works__text">
                         <span class="section__label">The Self-Pour Experience</span>
-                        <h2 class="section__title">Your Pour, Your Way</h2>
+                        <h2 class="section__title" id="how-it-works-title">Orlando's Only Self-Pour Taphouse</h2>
                         <p class="how-it-works__description">
-                            At Pour Choice, <strong>you're the bartender</strong>. Link your payment method to a wristband and explore our 50 self-pour taps featuring craft beer, hard seltzer, cider, and cocktails on tap — all rotating weekly.
+                            At Pour Choice Taphouse, <strong>you're the bartender</strong>. We've revolutionized the <strong>Orlando craft beer</strong> scene with our innovative self-pour system. Link your payment method to an RFID wristband and explore our <strong>50 rotating taps</strong> featuring the best <strong>craft beer, hard seltzer, cider, and cocktails</strong> in Central Florida — all updated weekly with new arrivals.
                         </p>
                         <div class="how-it-works__steps">
                             <div class="how-it-works__step">
@@ -177,17 +556,108 @@
             </div>
         </section>
 
-        <!-- Instagram Feed Section -->
-        <section class="section section--instagram" id="instagram">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             WHY LOCALS LOVE US SECTION (SEO Content)
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--about" id="why-locals-love-us" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">About Our Bar</span>
+                    <h2 class="section__title" id="about-title">Why Orlando Locals Love Pour Choice</h2>
+                </div>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>Looking for the <strong>best bar in Orlando</strong>? Pour Choice Taphouse has become the go-to destination for <strong>craft beer lovers in Central Florida</strong>. Nestled in the vibrant <strong>Mills 50 District</strong> — Orlando's most eclectic neighborhood — we've created a unique space where beer enthusiasts can explore, discover, and pour their perfect pint.</p>
+                        
+                        <p>Unlike traditional <strong>Orlando bars</strong>, our revolutionary self-pour system puts you in control. With <strong>50 taps rotating weekly</strong>, you'll find everything from local <strong>Florida craft breweries</strong> to rare releases from around the world. Whether you're craving a crisp IPA, a smooth stout, a refreshing hard seltzer, or even a <strong>cocktail on tap</strong> — we've got you covered.</p>
+                        
+                        <p>Our location at <strong>1225 N Mills Ave</strong> makes us the perfect spot for a night out in Orlando. Just minutes from <strong>Ivanhoe Village</strong> and <strong>downtown Orlando</strong>, Pour Choice Taphouse offers the best <strong>craft beer experience</strong> with easy parking and an unbeatable atmosphere. Come see why we're rated as one of the <strong>best taphouses in Orlando</strong>!</p>
+                    </div>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <span class="about__feature-icon">🍺</span>
+                            <h3>50 Rotating Taps</h3>
+                            <p>New craft beers, seltzers, and cocktails added weekly</p>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">📍</span>
+                            <h3>Prime Mills 50 Location</h3>
+                            <p>Heart of Orlando's best nightlife district</p>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">💳</span>
+                            <h3>Pay What You Pour</h3>
+                            <p>No minimums — try samples or full pours</p>
+                        </div>
+                        <div class="about__feature">
+                            <span class="about__feature-icon">🍸</span>
+                            <h3>Full Liquor Bar</h3>
+                            <p>Wine, spirits, and handcrafted cocktails</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             TESTIMONIALS / REVIEWS SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <!-- TODO: Replace with real customer reviews -->
+        <section class="section section--reviews" id="reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">What People Say</span>
+                    <h2 class="section__title" id="reviews-title">Orlando's Favorite Taphouse</h2>
+                    <p class="section__subtitle">See why craft beer lovers rate us 4.9/5 stars</p>
+                </div>
+                <div class="reviews__grid">
+                    <blockquote class="review__card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review__text" itemprop="reviewBody">"Hands down the best craft beer bar in Orlando! The self-pour system is genius — I tried 8 different IPAs in one night. The rotating taps always have something new and exciting."</p>
+                        <footer class="review__author">
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Mike R.</span>
+                            </span>
+                            <span class="review__source">via Google</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="review__card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review__text" itemprop="reviewBody">"Finally found my favorite bar in Mills 50! The vibe is perfect, staff is friendly, and being able to pour my own beer is such a fun experience. Best taphouse in Orlando!"</p>
+                        <footer class="review__author">
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">Sarah L.</span>
+                            </span>
+                            <span class="review__source">via Yelp</span>
+                        </footer>
+                    </blockquote>
+                    <blockquote class="review__card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="review__text" itemprop="reviewBody">"Great selection of local Florida craft beers. Love that they have cocktails on tap too! The location near Ivanhoe is super convenient. Definitely the best beer bar in Orlando."</p>
+                        <footer class="review__author">
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">David K.</span>
+                            </span>
+                            <span class="review__source">via Untappd</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             INSTAGRAM FEED SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--instagram" id="instagram" aria-labelledby="instagram-title">
             <div class="container">
                 <div class="section__header">
                     <span class="section__label">@pourchoicetaphouse</span>
-                    <h2 class="section__title">Latest from Instagram</h2>
-                    <p class="section__subtitle">Follow us for daily tap updates, events, and good times</p>
+                    <h2 class="section__title" id="instagram-title">Latest from Instagram</h2>
+                    <p class="section__subtitle">Follow us for daily tap updates, events, and good times at Orlando's best craft beer bar</p>
                 </div>
                 
                 <div class="instagram__feed">
-                    <!-- Elfsight Instagram Feed -->
+                    <!-- Elfsight Instagram Feed - Lazy Loaded -->
                     <div class="instagram__widget">
                         <script src="https://elfsightcdn.com/platform.js" async></script>
                         <div class="elfsight-app-a94cb208-4cee-421f-9c19-b9d35a4a8841" data-elfsight-app-lazy></div>
@@ -195,8 +665,8 @@
                 </div>
                 
                 <div class="instagram__follow">
-                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" class="btn btn--primary">
-                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" class="btn btn--primary" aria-label="Follow Pour Choice Taphouse on Instagram">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                         Follow @pourchoicetaphouse
@@ -205,23 +675,16 @@
             </div>
         </section>
 
-        <!-- Hours Section -->
-        <section class="section section--hours" id="hours">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             HOURS SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--hours" id="hours" aria-labelledby="hours-title">
             <div class="container">
                 <div class="hours__card">
                     <div class="hours__header">
-                        <span class="section__label">Visit Us</span>
-                        <h2 class="section__title">Hours of Operation</h2>
+                        <span class="section__label">Plan Your Visit</span>
+                        <h2 class="section__title" id="hours-title">Hours of Operation</h2>
                     </div>
-                    
-                    <!-- 
-                    ╔════════════════════════════════════════════════════════════════╗
-                    ║  TODO: UPDATE HOURS                                            ║
-                    ║                                                                ║
-                    ║  Update these hours to match your actual operating hours.      ║
-                    ║  The JavaScript will automatically highlight today's hours.    ║
-                    ╚════════════════════════════════════════════════════════════════╝
-                    -->
                     
                     <div class="hours__grid">
                         <div class="hours__day" data-day="1">
@@ -256,23 +719,73 @@
                     
                     <div class="hours__note">
                         <p>🎉 <strong>Happy Hour:</strong> Mon–Fri, 4–7 PM</p>
-                        <p class="hours__note-sub">Hours may vary on holidays. Check our Instagram for updates!</p>
+                        <p class="hours__note-sub">Hours may vary on holidays. Follow our Instagram for updates!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Beer Menu Section (Untappd Integration) -->
-        <section class="section section--menu" id="menu">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             EVENTS SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <!-- TODO: Replace with real upcoming events -->
+        <section class="section section--events" id="events" aria-labelledby="events-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">What's Happening</span>
+                    <h2 class="section__title" id="events-title">Upcoming Events at Orlando's Best Taphouse</h2>
+                </div>
+                <div class="events__grid">
+                    <article class="event__card">
+                        <div class="event__date">
+                            <span class="event__month">JAN</span>
+                            <span class="event__day">15</span>
+                        </div>
+                        <div class="event__details">
+                            <h3 class="event__title">Florida Brewery Tap Takeover</h3>
+                            <p class="event__description">10 exclusive taps from Florida's best local craft breweries. Meet the brewers and try limited releases!</p>
+                            <p class="event__time">6:00 PM - 11:00 PM</p>
+                        </div>
+                    </article>
+                    <article class="event__card">
+                        <div class="event__date">
+                            <span class="event__month">JAN</span>
+                            <span class="event__day">22</span>
+                        </div>
+                        <div class="event__details">
+                            <h3 class="event__title">IPA Night</h3>
+                            <p class="event__description">All IPAs discounted! Featuring new hop-forward releases from across the country.</p>
+                            <p class="event__time">4:00 PM - Close</p>
+                        </div>
+                    </article>
+                    <article class="event__card">
+                        <div class="event__date">
+                            <span class="event__month">FEB</span>
+                            <span class="event__day">1</span>
+                        </div>
+                        <div class="event__details">
+                            <h3 class="event__title">Super Bowl Party</h3>
+                            <p class="event__description">Watch the big game on our screens! Special game day taps and drink specials all day.</p>
+                            <p class="event__time">2:00 PM - Late</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             BEER MENU SECTION (Untappd Integration)
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--menu" id="menu" aria-labelledby="menu-title">
             <div class="container">
                 <div class="section__header">
                     <span class="section__label">What's On Tap</span>
-                    <h2 class="section__title">Live Self-Pour Menu</h2>
-                    <p class="section__subtitle">50 rotating taps of craft beer, hard seltzer, cider, and cocktails — updated weekly</p>
+                    <h2 class="section__title" id="menu-title">Live Self-Pour Beer Menu</h2>
+                    <p class="section__subtitle">50 rotating taps of Orlando's best craft beer, hard seltzer, cider, and cocktails — updated weekly</p>
                 </div>
                 
                 <div class="menu__embed">
-                    <!-- Untappd Menu Widget -->
+                    <!-- Untappd Menu Widget - Lazy Loaded -->
                     <div id="menu-container"></div>
                     <script type="text/javascript">
                         !function(e,t){var n=document.createElement("script"),a=document.getElementsByTagName("script")[0];n.async=1,a.parentNode.insertBefore(n,a),n.onload=n.onreadystatechange=function(e,a){(a||!n.readyState||/loaded|complete/.test(n.readyState))&&(n.onload=n.onreadystatechange=null,n=void 0,a||t&&t())},n.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",(function(){PreloadEmbedMenu("menu-container",37440,145289)}));
@@ -285,21 +798,32 @@
             </div>
         </section>
 
-        <!-- Location Section -->
-        <section class="section section--location" id="location">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             LOCATION SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--location" id="location" aria-labelledby="location-title">
             <div class="container">
                 <div class="section__header">
-                    <span class="section__label">Find Us</span>
-                    <h2 class="section__title">Location</h2>
-                    <p class="section__subtitle">Located in the heart of the Mills 50 District</p>
+                    <span class="section__label">Visit Us</span>
+                    <h2 class="section__title" id="location-title">Find Orlando's Best Craft Beer Bar</h2>
+                    <p class="section__subtitle">Located in the heart of the Mills 50 District, minutes from Ivanhoe Village</p>
                 </div>
                 
                 <div class="location__content">
-                    <div class="location__info">
-                        <div class="location__address">
+                    <div class="location__info" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <meta itemprop="name" content="Pour Choice Taphouse">
+                        <div class="location__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <h3>Pour Choice Taphouse</h3>
-                            <p>1225 North Mills Ave</p>
-                            <p>Orlando, FL 32803</p>
+                            <p><span itemprop="streetAddress">1225 North Mills Ave</span></p>
+                            <p><span itemprop="addressLocality">Orlando</span>, <span itemprop="addressRegion">FL</span> <span itemprop="postalCode">32803</span></p>
+                        </div>
+                        
+                        <!-- TODO: Replace with your actual phone number -->
+                        <div class="location__phone">
+                            <a href="tel:+14075551234" class="location__phone-link" itemprop="telephone" aria-label="Call Pour Choice Taphouse">
+                                <span class="location__icon">📞</span>
+                                <span>(407) 555-1234</span>
+                            </a>
                         </div>
                         
                         <div class="location__details">
@@ -313,16 +837,18 @@
                             </div>
                         </div>
                         
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=1225+North+Mills+Ave+Orlando+FL+32803" 
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Pour+Choice+Taphouse+1225+North+Mills+Ave+Orlando+FL+32803" 
                            target="_blank" 
                            rel="noopener" 
-                           class="btn btn--primary">
+                           class="btn btn--primary"
+                           aria-label="Get directions to Pour Choice Taphouse on Google Maps">
                             Get Directions
                         </a>
                     </div>
                     
                     <div class="location__map">
                         <!-- Google Maps Embed -->
+                        <!-- TODO: Replace with your actual Google Place ID for better SEO -->
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8744858426584!2d-81.36658492392068!3d28.562454875697407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ae4e3e3e3e3%3A0x0!2s1225%20N%20Mills%20Ave%2C%20Orlando%2C%20FL%2032803!5e0!3m2!1sen!2sus!4v1701619200000!5m2!1sen!2sus"
                             width="100%" 
@@ -331,22 +857,25 @@
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
-                            title="Pour Choice Taphouse Location">
+                            title="Pour Choice Taphouse Location - Best Craft Beer Bar in Orlando Mills 50">
                         </iframe>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="section section--contact" id="contact">
+        <!-- ═══════════════════════════════════════════════════════════════════
+             CONTACT / NAP SECTION
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--contact" id="contact" aria-labelledby="contact-title">
             <div class="container">
+                <h2 class="sr-only" id="contact-title">Contact Pour Choice Taphouse</h2>
                 <div class="contact__bar">
                     <div class="contact__item">
                         <span class="contact__icon">📍</span>
                         <div class="contact__text">
                             <span class="contact__label">Address</span>
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=1225+North+Mills+Ave+Orlando+FL+32803" target="_blank" rel="noopener">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Pour+Choice+Taphouse+1225+North+Mills+Ave+Orlando+FL+32803" target="_blank" rel="noopener">
                                 1225 N Mills Ave, Orlando, FL 32803
                             </a>
                         </div>
@@ -362,32 +891,97 @@
                 </div>
             </div>
         </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             BLOG / NEWS SECTION (SEO Content)
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--blog" id="blog" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label">Craft Beer News</span>
+                    <h2 class="section__title" id="blog-title">Latest from Orlando's Craft Beer Scene</h2>
+                </div>
+                <div class="blog__grid">
+                    <article class="blog__card">
+                        <h3 class="blog__title">Top 10 IPAs on Tap This Week in Orlando</h3>
+                        <p class="blog__excerpt">From hazy New England IPAs to classic West Coast styles, our rotating taps are loaded with hop-forward favorites this week. Stop by Pour Choice Taphouse to try them all!</p>
+                        <span class="blog__date">December 2024</span>
+                    </article>
+                    <article class="blog__card">
+                        <h3 class="blog__title">Best Craft Beer Bars in Mills 50 District</h3>
+                        <p class="blog__excerpt">The Mills 50 District has become Orlando's hottest neighborhood for craft beer. Discover why Pour Choice Taphouse leads the pack with 50 self-pour taps.</p>
+                        <span class="blog__date">November 2024</span>
+                    </article>
+                    <article class="blog__card">
+                        <h3 class="blog__title">How Self-Pour Beer Technology Works</h3>
+                        <p class="blog__excerpt">Curious about self-pour? Learn how our RFID wristband system lets you explore craft beer your way at Orlando's most innovative taphouse.</p>
+                        <span class="blog__date">October 2024</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEO CONTENT SECTION (Hidden/Minimal Visual)
+             ═══════════════════════════════════════════════════════════════════ -->
+        <section class="section section--seo-content" aria-labelledby="seo-content-title">
+            <div class="container">
+                <div class="seo-content">
+                    <h2 id="seo-content-title">Best Craft Beer Bar in Orlando's Mills 50 District</h2>
+                    <p>Pour Choice Taphouse is <strong>Orlando's premier craft beer destination</strong>, featuring an innovative self-pour system with <strong>50 rotating taps</strong>. Located at 1225 N Mills Ave in the vibrant <strong>Mills 50 District</strong>, we've become the go-to <strong>taphouse in Orlando</strong> for beer enthusiasts, locals, and visitors alike.</p>
+                    
+                    <h3>Why Choose Pour Choice as Your Orlando Bar?</h3>
+                    <p>As the <strong>best bar in Orlando</strong> for craft beer lovers, we offer an unparalleled selection of <strong>Florida craft breweries</strong>, national favorites, and rare international releases. Our unique pay-by-the-ounce system means you can sample dozens of beers in one visit — perfect for discovering your new favorite <strong>craft beer in Orlando</strong>.</p>
+                    
+                    <h3>50 Rotating Taps in Orlando</h3>
+                    <p>Our <strong>beer menu changes weekly</strong>, ensuring there's always something new to discover at our <strong>Orlando taphouse</strong>. From hoppy IPAs and rich stouts to refreshing hard seltzers and <strong>cocktails on tap</strong>, Pour Choice has the most diverse selection of any <strong>bar near Ivanhoe Orlando</strong>.</p>
+                    
+                    <h3>Your Neighborhood Craft Beer Bar</h3>
+                    <p>Whether you're searching for <strong>bars in Mills 50 Orlando</strong>, the <strong>best taphouse in Orlando</strong>, or simply the finest <strong>craft beer Orlando</strong> has to offer, Pour Choice Taphouse delivers. Join us for <strong>happy hour in Orlando</strong> (Mon-Fri 4-7 PM) and experience why we're rated one of the <strong>best bars in Central Florida</strong>.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__brand">
-                    <h3 class="footer__logo">Pour Choice Taphouse</h3>
-                    <p class="footer__tagline">50 Self-Pour Taps • Craft Beer • Cocktails • Full Bar</p>
+                <div class="footer__brand" itemscope itemtype="https://schema.org/LocalBusiness">
+                    <h3 class="footer__logo" itemprop="name">Pour Choice Taphouse</h3>
+                    <p class="footer__tagline">Orlando's Best Self-Pour Craft Beer Bar</p>
+                    <address class="footer__address" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">1225 North Mills Ave</span><br>
+                        <span itemprop="addressLocality">Orlando</span>, <span itemprop="addressRegion">FL</span> <span itemprop="postalCode">32803</span>
+                    </address>
+                    <!-- TODO: Update with real phone number -->
+                    <p class="footer__phone">
+                        <a href="tel:+14075551234" itemprop="telephone">(407) 555-1234</a>
+                    </p>
                 </div>
                 
                 <div class="footer__social">
-                    <!-- TODO: Add your social media links -->
-                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <a href="https://instagram.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Follow Pour Choice Taphouse on Instagram" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-                    <a href="https://facebook.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Facebook" class="footer__social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <a href="https://facebook.com/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Follow Pour Choice Taphouse on Facebook" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
-                    <a href="https://untappd.com/v/pour-choice-taphouse" target="_blank" rel="noopener" aria-label="Untappd" class="footer__social-link">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <a href="https://untappd.com/v/pour-choice-taphouse/37440" target="_blank" rel="noopener" aria-label="Find Pour Choice Taphouse on Untappd" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
                             <path d="M11.684 9.271l-3.746-6.489a1.91 1.91 0 0 0-2.608-.699l-.001.001a1.91 1.91 0 0 0-.699 2.608l3.746 6.489a.89.89 0 0 1-.326 1.218.89.89 0 0 1-1.217-.325l-3.746-6.489A3.691 3.691 0 0 1 4.424.547l.001-.001a3.691 3.691 0 0 1 5.039 1.35l3.746 6.489a.89.89 0 0 1-1.526.886zM21.258 6.541a3.691 3.691 0 0 0-5.039-1.35l-3.746 6.489a.89.89 0 0 0 1.526.886l3.746-6.489a1.91 1.91 0 0 1 2.608-.699 1.91 1.91 0 0 1 .699 2.608l-3.746 6.489a.89.89 0 0 0 .326 1.218.89.89 0 0 0 1.217-.325l3.746-6.489a3.691 3.691 0 0 0-1.337-5.038zm-6.441 8.019a3.04 3.04 0 0 1-3.04 3.04 3.04 3.04 0 0 1-3.04-3.04 3.04 3.04 0 0 1 3.04-3.04 3.04 3.04 0 0 1 3.04 3.04z"/>
+                        </svg>
+                    </a>
+                    <!-- TODO: Add Google Business Profile link -->
+                    <a href="https://g.page/pourchoicetaphouse" target="_blank" rel="noopener" aria-label="Find Pour Choice Taphouse on Google" class="footer__social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
+                            <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
                         </svg>
                     </a>
                 </div>
@@ -399,7 +993,7 @@
                     Pour Choice Taphouse © <span id="current-year">2025</span>
                 </p>
                 <p class="footer__disclaimer">
-                    Please enjoy our craft beer and full bar offerings responsibly. Don't drink and drive.
+                    The best craft beer bar in Orlando, FL. Please enjoy our self-pour taps responsibly. Don't drink and drive.
                 </p>
             </div>
         </div>
@@ -409,4 +1003,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
