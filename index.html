@@ -49,10 +49,42 @@
                 <div class="age-gate__logo">🍺</div>
                 <h2 class="age-gate__title">Welcome to Pour Choice Taphouse</h2>
                 <p class="age-gate__text">You must be 21 years or older to enter this site.</p>
-                <p class="age-gate__question">Are you 21 or older?</p>
-                <div class="age-gate__buttons">
-                    <button id="age-yes" class="btn btn--primary">Yes, I'm 21+</button>
-                    <button id="age-no" class="btn btn--secondary">No, I'm Under 21</button>
+                <p class="age-gate__question">Please enter your date of birth:</p>
+                <div class="age-gate__form">
+                    <div class="age-gate__inputs">
+                        <div class="age-gate__field">
+                            <label for="age-month">Month</label>
+                            <select id="age-month" required>
+                                <option value="">MM</option>
+                                <option value="1">01 - Jan</option>
+                                <option value="2">02 - Feb</option>
+                                <option value="3">03 - Mar</option>
+                                <option value="4">04 - Apr</option>
+                                <option value="5">05 - May</option>
+                                <option value="6">06 - Jun</option>
+                                <option value="7">07 - Jul</option>
+                                <option value="8">08 - Aug</option>
+                                <option value="9">09 - Sep</option>
+                                <option value="10">10 - Oct</option>
+                                <option value="11">11 - Nov</option>
+                                <option value="12">12 - Dec</option>
+                            </select>
+                        </div>
+                        <div class="age-gate__field">
+                            <label for="age-day">Day</label>
+                            <select id="age-day" required>
+                                <option value="">DD</option>
+                            </select>
+                        </div>
+                        <div class="age-gate__field">
+                            <label for="age-year">Year</label>
+                            <select id="age-year" required>
+                                <option value="">YYYY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="age-error" class="age-gate__error"></p>
+                    <button id="age-submit" class="btn btn--primary btn--large">Enter Site</button>
                 </div>
                 <p class="age-gate__disclaimer">By entering this site, you agree to our Terms of Service and Privacy Policy.</p>
             </div>
