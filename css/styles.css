@@ -1359,6 +1359,108 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   Weekly Events Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.section--weekly-events {
+    background: var(--color-bg-secondary);
+}
+
+.weekly-events__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+    .weekly-events__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .weekly-events__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.weekly-event__card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.weekly-event__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color-accent-primary);
+    transform: scaleY(0);
+    transition: transform var(--transition-base);
+}
+
+.weekly-event__card:hover {
+    border-color: var(--color-accent-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.weekly-event__card:hover::before {
+    transform: scaleY(1);
+}
+
+.weekly-event__card--weekend {
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, rgba(212, 166, 52, 0.05) 100%);
+    border-color: rgba(212, 166, 52, 0.3);
+}
+
+@media (min-width: 1024px) {
+    .weekly-event__card--weekend {
+        grid-column: span 2;
+    }
+}
+
+.weekly-event__day {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--color-accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-sm);
+}
+
+.weekly-event__title {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+    text-transform: none;
+}
+
+.weekly-event__description {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-sm);
+}
+
+.weekly-event__special {
+    font-size: 0.875rem;
+    color: var(--color-accent-primary);
+    font-weight: 500;
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    Reviews Section
    ───────────────────────────────────────────────────────────────────────────── */
 .section--reviews {
