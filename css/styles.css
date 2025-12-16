@@ -675,9 +675,23 @@ h1, h2, h3, h4, h5, h6 {
    How It Works Section
    ───────────────────────────────────────────────────────────────────────────── */
 .section--how-it-works {
-    background: var(--color-bg-primary) url('../images/How%20it%20works%20hero.png') center/cover no-repeat;
+    background: var(--color-bg-primary);
     overflow: hidden;
     position: relative;
+}
+
+.section--how-it-works::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/How%20it%20works%20hero.png') center/cover no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.section--how-it-works .container {
+    position: relative;
+    z-index: 1;
 }
 
 .how-it-works__content {
