@@ -394,56 +394,6 @@
     </script>
 </head>
 <body>
-    <!-- Age Gate Modal -->
-    <div id="age-gate" class="age-gate">
-        <div class="age-gate__overlay"></div>
-        <div class="age-gate__modal">
-            <div class="age-gate__content">
-                <div class="age-gate__logo">🍺</div>
-                <h2 class="age-gate__title">Welcome to Pour Choice Taphouse</h2>
-                <p class="age-gate__text">You must be 21 years or older to enter this site.</p>
-                <p class="age-gate__question">Please enter your date of birth:</p>
-                <div class="age-gate__form">
-                    <div class="age-gate__inputs">
-                        <div class="age-gate__field">
-                            <label for="age-month">Month</label>
-                            <select id="age-month" required>
-                                <option value="">MM</option>
-                                <option value="1">01 - Jan</option>
-                                <option value="2">02 - Feb</option>
-                                <option value="3">03 - Mar</option>
-                                <option value="4">04 - Apr</option>
-                                <option value="5">05 - May</option>
-                                <option value="6">06 - Jun</option>
-                                <option value="7">07 - Jul</option>
-                                <option value="8">08 - Aug</option>
-                                <option value="9">09 - Sep</option>
-                                <option value="10">10 - Oct</option>
-                                <option value="11">11 - Nov</option>
-                                <option value="12">12 - Dec</option>
-                            </select>
-                        </div>
-                        <div class="age-gate__field">
-                            <label for="age-day">Day</label>
-                            <select id="age-day" required>
-                                <option value="">DD</option>
-                            </select>
-                        </div>
-                        <div class="age-gate__field">
-                            <label for="age-year">Year</label>
-                            <select id="age-year" required>
-                                <option value="">YYYY</option>
-                            </select>
-                        </div>
-                    </div>
-                    <p id="age-error" class="age-gate__error"></p>
-                    <button id="age-submit" class="btn btn--primary btn--large">Enter Site</button>
-                </div>
-                <p class="age-gate__disclaimer">By entering this site, you agree to our Terms of Service and Privacy Policy.</p>
-            </div>
-        </div>
-    </div>
-
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav__container">
@@ -965,8 +915,10 @@
             
             <div class="footer__bottom">
                 <p class="footer__legal">
-                    Drink Responsibly • Must be 21+ to enter • 
                     Pour Choice Taphouse © <span id="current-year">2025</span>
+                </p>
+                <p class="footer__disclaimer footer__disclaimer--prominent">
+                    🍺 <strong>Please Drink Responsibly</strong> • Must be 21 years or older to enter • All patrons will be asked to provide a valid photo ID
                 </p>
                 <p class="footer__disclaimer">
                     The best craft beer bar in Orlando, FL. Please enjoy our self-pour taps responsibly. Don't drink and drive.

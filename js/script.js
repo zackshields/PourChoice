@@ -1,153 +1,12 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════
  * POUR CHOICE TAPHOUSE - Main JavaScript
- * Handles age gate, navigation, and minor UI enhancements
+ * Handles navigation and minor UI enhancements
  * ═══════════════════════════════════════════════════════════════════════════
  */
 
 (function() {
     'use strict';
-
-    // ─────────────────────────────────────────────────────────────────────────
-    // Age Gate Modal
-    // ─────────────────────────────────────────────────────────────────────────
-    const AgeGate = {
-        COOKIE_NAME: 'pourchoice_age_verified',
-        COOKIE_DAYS: 1, // Session-like behavior - expires after 1 day
-        MIN_AGE: 21,
-
-        init() {
-            const ageGate = document.getElementById('age-gate');
-            const monthSelect = document.getElementById('age-month');
-            const daySelect = document.getElementById('age-day');
-            const yearSelect = document.getElementById('age-year');
-            const submitBtn = document.getElementById('age-submit');
-            const errorEl = document.getElementById('age-error');
-
-            if (!ageGate) return;
-
-            // Check if user has already verified age
-            if (this.isVerified()) {
-                this.hideModal(ageGate);
-                return;
-            }
-
-            // Populate day and year dropdowns
-            this.populateDays(daySelect);
-            this.populateYears(yearSelect);
-
-            // Update days when month changes
-            monthSelect?.addEventListener('change', () => {
-                this.populateDays(daySelect, parseInt(monthSelect.value), parseInt(yearSelect.value));
-            });
-
-            yearSelect?.addEventListener('change', () => {
-                if (monthSelect.value) {
-                    this.populateDays(daySelect, parseInt(monthSelect.value), parseInt(yearSelect.value));
-                }
-            });
-
-            // Show modal and prevent scrolling
-            document.body.classList.add('no-scroll');
-
-            // Submit button handler
-            submitBtn?.addEventListener('click', () => {
-                const month = parseInt(monthSelect.value);
-                const day = parseInt(daySelect.value);
-                const year = parseInt(yearSelect.value);
-
-                // Validate all fields are filled
-                if (!month || !day || !year) {
-                    this.showError(errorEl, 'Please enter your complete date of birth.');
-                    return;
-                }
-
-                // Calculate age
-                const birthDate = new Date(year, month - 1, day);
-                const age = this.calculateAge(birthDate);
-
-                if (age >= this.MIN_AGE) {
-                    this.setCookie();
-                    this.hideModal(ageGate);
-                    document.body.classList.remove('no-scroll');
-                } else {
-                    this.showError(errorEl, 'Sorry, you must be 21 or older to enter this site.');
-                    setTimeout(() => {
-                        window.location.href = 'https://www.responsibility.org/';
-                    }, 2000);
-                }
-            });
-        },
-
-        populateDays(select, month = null, year = null) {
-            const currentValue = select.value;
-            const daysInMonth = month && year ? new Date(year, month, 0).getDate() : 31;
-            
-            // Clear existing options except placeholder
-            select.innerHTML = '<option value="">DD</option>';
-            
-            for (let i = 1; i <= daysInMonth; i++) {
-                const option = document.createElement('option');
-                option.value = i;
-                option.textContent = i.toString().padStart(2, '0');
-                select.appendChild(option);
-            }
-            
-            // Restore previous value if still valid
-            if (currentValue && parseInt(currentValue) <= daysInMonth) {
-                select.value = currentValue;
-            }
-        },
-
-        populateYears(select) {
-            const currentYear = new Date().getFullYear();
-            const minYear = currentYear - 100;
-            
-            for (let year = currentYear; year >= minYear; year--) {
-                const option = document.createElement('option');
-                option.value = year;
-                option.textContent = year;
-                select.appendChild(option);
-            }
-        },
-
-        calculateAge(birthDate) {
-            const today = new Date();
-            let age = today.getFullYear() - birthDate.getFullYear();
-            const monthDiff = today.getMonth() - birthDate.getMonth();
-            
-            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            
-            return age;
-        },
-
-        showError(el, message) {
-            if (el) {
-                el.textContent = message;
-                el.style.display = 'block';
-            }
-        },
-
-        isVerified() {
-            return document.cookie.includes(this.COOKIE_NAME + '=true');
-        },
-
-        setCookie() {
-            const date = new Date();
-            date.setTime(date.getTime() + (this.COOKIE_DAYS * 24 * 60 * 60 * 1000));
-            document.cookie = `${this.COOKIE_NAME}=true; expires=${date.toUTCString()}; path=/; SameSite=Lax`;
-        },
-
-        hideModal(modal) {
-            modal.classList.add('hidden');
-            // Remove from DOM after animation
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 400);
-        }
-    };
 
     // ─────────────────────────────────────────────────────────────────────────
     // Mobile Navigation
@@ -309,7 +168,6 @@
     // Initialize Everything
     // ─────────────────────────────────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
-        AgeGate.init();
         Navigation.init();
         Hours.init();
         Footer.init();

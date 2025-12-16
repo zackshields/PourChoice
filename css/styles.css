@@ -1260,6 +1260,20 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.75rem;
 }
 
+.footer__disclaimer--prominent {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    padding: var(--space-md) var(--space-lg);
+    background: rgba(212, 166, 52, 0.1);
+    border: 1px solid rgba(212, 166, 52, 0.2);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+.footer__disclaimer--prominent strong {
+    color: var(--color-accent-primary);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Utility Classes
    ───────────────────────────────────────────────────────────────────────────── */
