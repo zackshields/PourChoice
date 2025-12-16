@@ -677,6 +677,37 @@ h1, h2, h3, h4, h5, h6 {
 .section--how-it-works {
     background: var(--color-bg-primary);
     overflow: hidden;
+    position: relative;
+}
+
+.section--how-it-works::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/How%20it%20works%20hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.section--how-it-works::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(13, 13, 13, 0.8) 0%,
+        rgba(13, 13, 13, 0.6) 50%,
+        rgba(13, 13, 13, 0.8) 100%
+    );
+    z-index: 0;
+}
+
+.section--how-it-works .container {
+    position: relative;
+    z-index: 1;
 }
 
 .how-it-works__content {
