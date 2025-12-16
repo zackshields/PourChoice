@@ -1585,6 +1585,22 @@ h1, h2, h3, h4, h5, h6 {
    ───────────────────────────────────────────────────────────────────────────── */
 .section--reviews {
     background: var(--color-bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section--reviews::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/reviews%20section%20hero.png') center/cover no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.section--reviews .container {
+    position: relative;
+    z-index: 1;
 }
 
 .reviews__grid {
