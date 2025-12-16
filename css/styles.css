@@ -1392,6 +1392,22 @@ h1, h2, h3, h4, h5, h6 {
    ───────────────────────────────────────────────────────────────────────────── */
 .section--weekly-events {
     background: var(--color-bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.section--weekly-events::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../images/weekly%20events%20hero%20image.png') center/cover no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+.section--weekly-events .container {
+    position: relative;
+    z-index: 1;
 }
 
 .weekly-events__grid {
