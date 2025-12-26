@@ -9,6 +9,49 @@
     'use strict';
 
     // ─────────────────────────────────────────────────────────────────────────
+    // NYE Popup
+    // ─────────────────────────────────────────────────────────────────────────
+    const NYEPopup = {
+        init() {
+            const popup = document.getElementById('nye-popup');
+            const closeBtn = document.getElementById('nye-popup-close');
+            const overlay = popup?.querySelector('.nye-popup__overlay');
+
+            if (!popup || !closeBtn) return;
+
+            // Check if popup was already dismissed in this session
+            const dismissed = sessionStorage.getItem('nye-popup-dismissed');
+            if (dismissed) {
+                popup.classList.add('hidden');
+                return;
+            }
+
+            // Show popup and prevent scrolling
+            document.body.classList.add('no-scroll');
+
+            // Close popup function
+            const closePopup = () => {
+                popup.classList.add('hidden');
+                document.body.classList.remove('no-scroll');
+                sessionStorage.setItem('nye-popup-dismissed', 'true');
+            };
+
+            // Close on button click
+            closeBtn.addEventListener('click', closePopup);
+
+            // Close on overlay click
+            overlay?.addEventListener('click', closePopup);
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && !popup.classList.contains('hidden')) {
+                    closePopup();
+                }
+            });
+        }
+    };
+
+    // ─────────────────────────────────────────────────────────────────────────
     // Mobile Navigation
     // ─────────────────────────────────────────────────────────────────────────
     const Navigation = {
@@ -168,6 +211,7 @@
     // Initialize Everything
     // ─────────────────────────────────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
+        NYEPopup.init();
         Navigation.init();
         Hours.init();
         Footer.init();
@@ -177,6 +221,7 @@
 
         // Log initialization (remove in production)
         console.log('🍺 Pour Choice Taphouse website initialized');
+        console.log('🎉 NYE Popup active');
     });
 
 })();

@@ -394,6 +394,45 @@
     </script>
 </head>
 <body>
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         NEW YEAR'S EVE POPUP MODAL
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <div class="nye-popup" id="nye-popup" role="dialog" aria-modal="true" aria-labelledby="nye-popup-title">
+        <div class="nye-popup__overlay"></div>
+        <div class="nye-popup__modal">
+            <button class="nye-popup__close" id="nye-popup-close" aria-label="Close popup">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            <div class="nye-popup__image">
+                <img src="images/NYE%20Party%20Website.png" alt="New Year's Eve at Pour Choice Taphouse" loading="eager">
+            </div>
+            <div class="nye-popup__content">
+                <span class="nye-popup__label">December 31st, 2025</span>
+                <h2 class="nye-popup__title" id="nye-popup-title">New Year's Eve at Pour Choice</h2>
+                <p class="nye-popup__description">Ring in 2025 at Orlando's best self-pour taphouse! Reserve your table and get a complimentary bottle of champagne.</p>
+                <div class="nye-popup__details">
+                    <div class="nye-popup__detail">
+                        <span class="nye-popup__detail-icon">🚪</span>
+                        <span>Doors open at 4PM</span>
+                    </div>
+                    <div class="nye-popup__detail">
+                        <span class="nye-popup__detail-icon">🍾</span>
+                        <span>Table seating begins at 8PM</span>
+                    </div>
+                </div>
+                <a href="https://www.eventbrite.com/e/new-years-eve-at-pour-choice-taphouse-tickets-1979086913233?aff=oddtdtcreator" 
+                   target="_blank" 
+                   rel="noopener" 
+                   class="btn btn--primary btn--large nye-popup__cta">
+                    Reserve Your Table
+                </a>
+                <p class="nye-popup__note">Limited bar seating available • No cover</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav__container">
@@ -436,6 +475,60 @@
             <div class="hero__scroll-line"></div>
         </div>
     </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         NEW YEAR'S EVE SECTION
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--nye" id="nye-party" aria-labelledby="nye-title">
+        <div class="nye-section__glow"></div>
+        <div class="container">
+            <div class="nye-section__content">
+                <div class="nye-section__text">
+                    <span class="section__label">🎉 Special Event</span>
+                    <h2 class="section__title nye-section__title" id="nye-title">Celebrate New Year's Eve at Pour Choice</h2>
+                    <p class="nye-section__description">
+                        Ring in 2025 at Orlando's best self-pour taphouse! Join us for an unforgettable New Year's Eve celebration in the heart of Mills 50.
+                    </p>
+                    
+                    <div class="nye-section__info-grid">
+                        <div class="nye-section__info-card">
+                            <div class="nye-section__info-icon">🍾</div>
+                            <h3>Table Reservations</h3>
+                            <p>6-seat and 4-seat tables available. Each reservation includes a <strong>complimentary bottle of champagne</strong>!</p>
+                        </div>
+                        <div class="nye-section__info-card">
+                            <div class="nye-section__info-icon">🕗</div>
+                            <h3>Event Details</h3>
+                            <ul class="nye-section__list">
+                                <li><strong>Doors open at 4PM</strong></li>
+                                <li>Table reservations begin at 8PM</li>
+                                <li>Countdown to midnight!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nye-section__walk-in">
+                        <p>🚶 <strong>Walk-ins welcome!</strong> Extremely limited bar seating and standing room available on a first come, first served basis — <strong>no cover charge</strong>.</p>
+                    </div>
+
+                    <a href="https://www.eventbrite.com/e/new-years-eve-at-pour-choice-taphouse-tickets-1979086913233?aff=oddtdtcreator" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="btn btn--primary btn--large nye-section__cta">
+                        🎫 Reserve Your Table on Eventbrite
+                    </a>
+                </div>
+                <div class="nye-section__image">
+                    <img src="images/NYE%20Party%20Website.png" 
+                         alt="New Year's Eve Party at Pour Choice Taphouse Orlando" 
+                         loading="lazy"
+                         width="600"
+                         height="600">
+                    <div class="nye-section__image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <main id="main-content">
         <!-- ═══════════════════════════════════════════════════════════════════
