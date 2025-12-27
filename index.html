@@ -64,19 +64,8 @@
     <meta name="msapplication-TileColor" content="#0d0d0d">
     
     <!-- ═══════════════════════════════════════════════════════════════════════
-         SECURITY - Content Security Policy
+         SECURITY - Basic security headers (CSP should be set via server HTTP headers)
          ═══════════════════════════════════════════════════════════════════════ -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://fonts.gstatic.com https://embed-menu-preloader.untappdapi.com https://elfsightcdn.com https://*.elfsight.com https://static.elfsight.com;
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.elfsight.com;
-        img-src 'self' data: https: blob:;
-        font-src 'self' https://fonts.gstatic.com;
-        frame-src 'self' https://www.google.com https://*.elfsight.com;
-        connect-src 'self' https://*.untappd.com https://*.elfsight.com https://fonts.googleapis.com;
-    ">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
     <!-- ═══════════════════════════════════════════════════════════════════════
