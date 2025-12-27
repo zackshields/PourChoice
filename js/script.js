@@ -208,6 +208,84 @@
     };
 
     // ─────────────────────────────────────────────────────────────────────────
+    // Map Lazy Load (Click to Load)
+    // ─────────────────────────────────────────────────────────────────────────
+    const MapLazyLoad = {
+        init() {
+            const placeholder = document.getElementById('map-placeholder');
+            const iframe = document.getElementById('google-map');
+
+            if (!placeholder || !iframe) return;
+
+            const loadMap = () => {
+                const src = iframe.dataset.src;
+                if (src) {
+                    iframe.src = src;
+                    iframe.style.display = 'block';
+                    placeholder.classList.add('hidden');
+                }
+            };
+
+            // Load on click
+            placeholder.addEventListener('click', loadMap);
+            
+            // Load on keyboard interaction (accessibility)
+            placeholder.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    loadMap();
+                }
+            });
+        }
+    };
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // Sticky NYE CTA Button
+    // ─────────────────────────────────────────────────────────────────────────
+    const StickyNYEButton = {
+        init() {
+            const button = document.getElementById('sticky-nye-cta');
+            const nyeSection = document.getElementById('nye-party');
+
+            if (!button) return;
+
+            // Hide button when NYE section is in view
+            if (nyeSection && 'IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            button.classList.add('hidden');
+                        } else {
+                            button.classList.remove('hidden');
+                        }
+                    });
+                }, { threshold: 0.3 });
+
+                observer.observe(nyeSection);
+            }
+
+            // Also hide when popup is visible
+            const popup = document.getElementById('nye-popup');
+            if (popup && !popup.classList.contains('hidden')) {
+                button.classList.add('hidden');
+                
+                // Show when popup closes
+                const popupObserver = new MutationObserver((mutations) => {
+                    mutations.forEach(mutation => {
+                        if (mutation.attributeName === 'class') {
+                            if (popup.classList.contains('hidden')) {
+                                button.classList.remove('hidden');
+                            }
+                        }
+                    });
+                });
+                
+                popupObserver.observe(popup, { attributes: true });
+            }
+        }
+    };
+
+    // ─────────────────────────────────────────────────────────────────────────
     // Initialize Everything
     // ─────────────────────────────────────────────────────────────────────────
     document.addEventListener('DOMContentLoaded', () => {
@@ -218,6 +296,8 @@
         SmoothScroll.init();
         LazyLoad.init();
         ScrollEffects.init();
+        MapLazyLoad.init();
+        StickyNYEButton.init();
 
         // Log initialization (remove in production)
         console.log('🍺 Pour Choice Taphouse website initialized');

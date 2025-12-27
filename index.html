@@ -404,6 +404,53 @@
         ]
     }
     </script>
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         JSON-LD - EVENT SCHEMA (New Year's Eve Party)
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "New Year's Eve at Pour Choice Taphouse",
+        "description": "Ring in 2026 at Orlando's best self-pour taphouse! Reserve your table and get a complimentary bottle of champagne. Doors open at 4PM, table seating begins at 8PM. Limited bar seating and standing room available with no cover.",
+        "image": "https://pourchoicetaphouse.com/images/NYE%20Party%202.png",
+        "startDate": "2025-12-31T16:00:00-05:00",
+        "endDate": "2026-01-01T02:00:00-05:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Pour Choice Taphouse",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1225 North Mills Ave",
+                "addressLocality": "Orlando",
+                "addressRegion": "FL",
+                "postalCode": "32803",
+                "addressCountry": "US"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Pour Choice Taphouse",
+            "url": "https://pourchoicetaphouse.com"
+        },
+        "performer": {
+            "@type": "Organization",
+            "name": "Pour Choice Taphouse"
+        },
+        "offers": {
+            "@type": "Offer",
+            "name": "Table Reservation",
+            "url": "https://www.eventbrite.com/e/new-years-eve-at-pour-choice-taphouse-tickets-1979086913233",
+            "price": "81.88",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2025-12-01T00:00:00-05:00"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- ═══════════════════════════════════════════════════════════════════════
@@ -418,7 +465,7 @@
                 </svg>
             </button>
             <div class="nye-popup__image">
-                <img src="images/NYE%20Party%202.png" alt="New Year's Eve 2025 celebration at Pour Choice Taphouse - champagne toast and party decorations" loading="eager">
+                <img src="images/NYE%20Party%202.png" alt="New Year's Eve 2025 celebration at Pour Choice Taphouse - champagne toast and party decorations" loading="eager" width="450" height="450">
             </div>
             <div class="nye-popup__content">
                 <span class="nye-popup__label">December 31st, 2025</span>
@@ -907,15 +954,20 @@
                     </div>
                     
                     <div class="location__map">
-                        <!-- Google Maps Embed -->
-                        <!-- TODO: Replace with your actual Google Place ID for better SEO -->
+                        <!-- Google Maps Embed - Lazy loaded on interaction -->
+                        <div class="map-placeholder" id="map-placeholder" role="button" tabindex="0" aria-label="Click to load interactive map">
+                            <div class="map-placeholder__content">
+                                <span class="map-placeholder__icon">📍</span>
+                                <span class="map-placeholder__text">Click to load map</span>
+                            </div>
+                        </div>
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8744858426584!2d-81.36658492392068!3d28.562454875697407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ae4e3e3e3e3%3A0x0!2s1225%20N%20Mills%20Ave%2C%20Orlando%2C%20FL%2032803!5e0!3m2!1sen!2sus!4v1701619200000!5m2!1sen!2sus"
+                            id="google-map"
+                            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8744858426584!2d-81.36658492392068!3d28.562454875697407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77ae4e3e3e3e3%3A0x0!2s1225%20N%20Mills%20Ave%2C%20Orlando%2C%20FL%2032803!5e0!3m2!1sen!2sus!4v1701619200000!5m2!1sen!2sus"
                             width="100%" 
                             height="100%" 
-                            style="border:0;" 
+                            style="border:0; display:none;" 
                             allowfullscreen="" 
-                            loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Pour Choice Taphouse Location - Best Craft Beer Bar in Orlando Mills 50">
                         </iframe>
@@ -1056,6 +1108,17 @@
             </div>
         </div>
     </footer>
+
+    <!-- Sticky NYE CTA Button -->
+    <a href="https://www.eventbrite.com/e/new-years-eve-at-pour-choice-taphouse-tickets-1979086913233?aff=oddtdtcreator" 
+       target="_blank" 
+       rel="noopener" 
+       class="sticky-nye-cta" 
+       id="sticky-nye-cta"
+       aria-label="Reserve your New Year's Eve table">
+        <span class="sticky-nye-cta__icon">🎉</span>
+        <span class="sticky-nye-cta__text">Reserve NYE Table</span>
+    </a>
 
     <!-- Scripts -->
     <script src="js/script.js"></script>

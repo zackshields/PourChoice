@@ -2380,6 +2380,112 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
+   Sticky NYE CTA Button
+   ───────────────────────────────────────────────────────────────────────────── */
+.sticky-nye-cta {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: linear-gradient(135deg, #ffd700 0%, #daa520 100%);
+    color: var(--color-bg-primary);
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-base);
+    animation: stickyPulse 2s ease-in-out infinite;
+}
+
+.sticky-nye-cta:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5), 0 12px 40px rgba(0, 0, 0, 0.4);
+    color: var(--color-bg-primary);
+}
+
+.sticky-nye-cta__icon {
+    font-size: 1.25rem;
+}
+
+.sticky-nye-cta__text {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .sticky-nye-cta__text {
+        display: inline;
+    }
+}
+
+@keyframes stickyPulse {
+    0%, 100% { 
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    50% { 
+        box-shadow: 0 6px 30px rgba(255, 215, 0, 0.6), 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.sticky-nye-cta.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Map Placeholder (Lazy Load)
+   ───────────────────────────────────────────────────────────────────────────── */
+.map-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-bg-tertiary) 0%, var(--color-bg-secondary) 100%);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.map-placeholder:hover {
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
+}
+
+.map-placeholder:hover .map-placeholder__icon {
+    transform: scale(1.1);
+}
+
+.map-placeholder__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.map-placeholder__icon {
+    font-size: 3rem;
+    transition: transform var(--transition-base);
+}
+
+.map-placeholder__text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-secondary);
+}
+
+.map-placeholder.hidden {
+    display: none;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
    Print Styles
    ───────────────────────────────────────────────────────────────────────────── */
 @media print {
