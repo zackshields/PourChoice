@@ -9,7 +9,7 @@
          PRIMARY SEO META TAGS - Optimized for Orlando Bar Keywords
          ═══════════════════════════════════════════════════════════════════════ -->
     <title>Pour Choice Taphouse | Best Craft Beer Bar in Orlando, FL</title>
-    <meta name="description" content="Orlando's #1 self-pour craft beer bar with 50 rotating taps. Best taphouse in Mills 50 District. Pour your own beer, seltzer & cocktails. Visit us today!">
+    <meta name="description" content="Orlando's largest self-pour taphouse with 50 rotating taps AND full bar! Craft beer, cocktails, wine & spirits in Mills 50 District. Pour your own or order from our bartenders.">
     <meta name="keywords" content="bar Orlando, craft beer Orlando, best bar Orlando, taphouse Orlando, beer bar Orlando, bars Mills 50 Orlando, self pour beer Orlando, craft beer bar Orlando FL, bars near Ivanhoe Orlando, best craft beer Orlando, Orlando taphouse, Mills 50 bars">
     <meta name="author" content="Pour Choice Taphouse">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -58,14 +58,26 @@
     <!-- ═══════════════════════════════════════════════════════════════════════
          FAVICONS & APP ICONS
          ═══════════════════════════════════════════════════════════════════════ -->
-    <!-- TODO: Add your favicon files to /images/ folder -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍺</text></svg>">
     <meta name="theme-color" content="#d4a634">
     <meta name="msapplication-TileColor" content="#0d0d0d">
+    
+    <!-- ═══════════════════════════════════════════════════════════════════════
+         SECURITY - Content Security Policy
+         ═══════════════════════════════════════════════════════════════════════ -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://fonts.gstatic.com https://embed-menu-preloader.untappdapi.com https://elfsightcdn.com https://*.elfsight.com https://static.elfsight.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.elfsight.com;
+        img-src 'self' data: https: blob:;
+        font-src 'self' https://fonts.gstatic.com;
+        frame-src 'self' https://www.google.com https://*.elfsight.com;
+        connect-src 'self' https://*.untappd.com https://*.elfsight.com https://fonts.googleapis.com;
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     
     <!-- ═══════════════════════════════════════════════════════════════════════
          PRECONNECT & FONTS
@@ -406,7 +418,7 @@
                 </svg>
             </button>
             <div class="nye-popup__image">
-                <img src="images/NYE%20Party%202.png" alt="New Year's Eve at Pour Choice Taphouse" loading="eager">
+                <img src="images/NYE%20Party%202.png" alt="New Year's Eve 2025 celebration at Pour Choice Taphouse - champagne toast and party decorations" loading="eager">
             </div>
             <div class="nye-popup__content">
                 <span class="nye-popup__label">December 31st, 2025</span>
@@ -456,7 +468,7 @@
          HERO SECTION
          ═══════════════════════════════════════════════════════════════════════ -->
     <header class="hero" id="hero">
-        <div class="hero__background" style="background-image: url('images/hero%20image.png');" role="img" aria-label="Interior of Pour Choice Taphouse craft beer bar in Orlando"></div>
+        <div class="hero__background" style="background-image: url('images/hero%20image.png');" role="img" aria-label="Interior view of Pour Choice Taphouse showing self-pour beer wall and full liquor bar in Orlando's Mills 50 District"></div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
             <!-- TODO: Replace with your actual logo image -->
@@ -520,7 +532,7 @@
                 </div>
                 <div class="nye-section__image">
                     <img src="images/NYE%20Party%202.png" 
-                         alt="New Year's Eve Party at Pour Choice Taphouse Orlando" 
+                         alt="Reserve your table for New Year's Eve at Pour Choice - Orlando's best NYE party destination" 
                          loading="lazy"
                          width="600"
                          height="600">
@@ -539,7 +551,7 @@
                 <div class="how-it-works__content">
                     <div class="how-it-works__image">
                         <img src="images/self-pour-taps.png" 
-                             alt="Self-pour craft beer taps at Pour Choice Taphouse Orlando - guests pouring their own beer" 
+                             alt="Guest using RFID wristband to pour craft beer from self-serve taps at Pour Choice Taphouse in Orlando's Mills 50 District" 
                              loading="lazy"
                              width="600"
                              height="400">
@@ -718,7 +730,8 @@
                 <div class="instagram__feed">
                     <!-- Elfsight Instagram Feed - Lazy Loaded -->
                     <div class="instagram__widget">
-                        <script src="https://elfsightcdn.com/platform.js" async></script>
+                        <!-- Note: SRI not used for Elfsight as they update scripts regularly which would break integrity checks -->
+                        <script src="https://elfsightcdn.com/platform.js" async crossorigin="anonymous" referrerpolicy="no-referrer-when-downgrade"></script>
                         <div class="elfsight-app-a94cb208-4cee-421f-9c19-b9d35a4a8841" data-elfsight-app-lazy></div>
                     </div>
                 </div>
@@ -797,9 +810,10 @@
                 
                 <div class="menu__embed">
                     <!-- Untappd Menu Widget - Lazy Loaded -->
+                    <!-- Note: SRI not used for Untappd as dynamically loaded scripts change regularly -->
                     <div id="menu-container"></div>
                     <script type="text/javascript">
-                        !function(e,t){var n=document.createElement("script"),a=document.getElementsByTagName("script")[0];n.async=1,a.parentNode.insertBefore(n,a),n.onload=n.onreadystatechange=function(e,a){(a||!n.readyState||/loaded|complete/.test(n.readyState))&&(n.onload=n.onreadystatechange=null,n=void 0,a||t&&t())},n.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",(function(){PreloadEmbedMenu("menu-container",37440,145289)}));
+                        !function(e,t){var n=document.createElement("script"),a=document.getElementsByTagName("script")[0];n.async=1,n.crossOrigin="anonymous",a.parentNode.insertBefore(n,a),n.onload=n.onreadystatechange=function(e,a){(a||!n.readyState||/loaded|complete/.test(n.readyState))&&(n.onload=n.onreadystatechange=null,n=void 0,a||t&&t())},n.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",(function(){PreloadEmbedMenu("menu-container",37440,145289)}));
                     </script>
                 </div>
                 
@@ -951,17 +965,17 @@
                     <article class="blog__card">
                         <h3 class="blog__title">Top 10 IPAs on Tap This Week in Orlando</h3>
                         <p class="blog__excerpt">From hazy New England IPAs to classic West Coast styles, our rotating taps are loaded with hop-forward favorites this week. Stop by Pour Choice Taphouse to try them all!</p>
-                        <span class="blog__date">December 2024</span>
+                        <span class="blog__date">December 2025</span>
                     </article>
                     <article class="blog__card">
                         <h3 class="blog__title">Best Craft Beer Bars in Mills 50 District</h3>
                         <p class="blog__excerpt">The Mills 50 District has become Orlando's hottest neighborhood for craft beer. Discover why Pour Choice Taphouse leads the pack with 50 self-pour taps.</p>
-                        <span class="blog__date">November 2024</span>
+                        <span class="blog__date">November 2025</span>
                     </article>
                     <article class="blog__card">
                         <h3 class="blog__title">How Self-Pour Beer Technology Works</h3>
                         <p class="blog__excerpt">Curious about self-pour? Learn how our RFID wristband system lets you explore craft beer your way at Orlando's most innovative taphouse.</p>
-                        <span class="blog__date">October 2024</span>
+                        <span class="blog__date">October 2025</span>
                     </article>
                 </div>
             </div>

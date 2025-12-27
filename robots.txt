@@ -1,0 +1,7 @@
+# Pour Choice Taphouse - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pourchoicetaphouse.com/sitemap.xml
+
