@@ -1268,6 +1268,36 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-accent-primary);
 }
 
+.how-it-works__banner {
+    display: inline-block;
+    margin-bottom: var(--space-lg);
+}
+
+.how-it-works__banner-text {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-accent-primary) 0%, #e6b93d 100%);
+    color: var(--color-bg-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-full);
+    box-shadow: 0 4px 15px rgba(212, 166, 52, 0.3);
+    animation: bannerPulse 2s ease-in-out infinite;
+}
+
+@keyframes bannerPulse {
+    0%, 100% { 
+        box-shadow: 0 4px 15px rgba(212, 166, 52, 0.3);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 6px 25px rgba(212, 166, 52, 0.5);
+        transform: scale(1.02);
+    }
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Beer Menu Section
    ───────────────────────────────────────────────────────────────────────────── */
