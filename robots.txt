@@ -5,3 +5,4 @@ Allow: /
 # Sitemap location
 Sitemap: https://pourchoicetaphouse.com/sitemap.xml
 
+
